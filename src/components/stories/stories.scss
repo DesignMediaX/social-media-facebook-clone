@@ -1,0 +1,64 @@
+.stories{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+
+    .storyCard{
+        display: flex;
+        flex-basis: 20%;
+        margin: 5px;
+        position: relative;
+
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            opacity: 0.6;
+            border-radius: 10px;
+        }
+
+        .storyProfile{
+            display: flex;
+            position: absolute;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            top: 10px;
+            left: 10px;
+            border: 3px solid #0064e8;
+            object-fit: cover;
+        }
+        .storybackground{
+            width: 100%;
+            height: 220px;
+            border-radius: 10px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .storyadd{
+            position: absolute;
+            left: 50%;
+            color: #0047a3;
+            width: 43px;
+            bottom: 50px;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+        .text{
+            position: absolute;
+            width: 100%;
+            font-size: 14px;
+            font-weight: 500;
+            bottom: 10px;
+            text-align: center;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.share{
+    width: 100%;
+    height: 170%;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+
+    .shareWrapper{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .shareTop{
+            display: flex;
+            align-items: center;
+
+            .shareProfileImg{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 10px;
+                object-fit: cover;
+            }
+
+            .shareInput{
+                border: none;
+                background-color: transparent;
+                font-size: 18px;
+                width: 80%;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+        }
+        .shareHr{
+            margin: 20px;
+        }
+
+        .shareImgContainer{
+            padding: 0 20px 10px 20px;
+            position: relative;
+
+            .shareImg{
+                width: 100%;
+                object-fit: contain;
+            }
+
+            .shareCancelImg{
+                position: absolute;
+                top: 0;
+                right: 20px;
+                background-color: white;
+                padding: 5px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+
+        .shareBottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .shareOptions{
+                display: flex;
+                align-items: center;
+                margin-left: 20px;
+                justify-content: space-around;
+                width: 90%;
+
+                .shareOption{
+                    display: flex;
+                    align-items: center;
+                    margin-right: 20px;
+                    cursor: pointer;
+
+                    .shareIcon{
+                        font-size: 30px;
+                        margin-right: 10px;
+                    }
+
+                    .shareOptionText{
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
